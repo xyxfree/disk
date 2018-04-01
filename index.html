@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>              
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>cloud disk</title>
+    <link href="css/index.css" rel="stylesheet" />
+</head>
+<body onselectstart="return false;">
+        <div class="title">
+            <i class="logo"></i>
+            <span class="word">云盘</span>
+            <span class="sucessed" id="renameprompt">重命名失败</span>
+        </div>
+        <div class="content" id="content">
+            <div class="left" id="left">
+                <a class="mage" href="javascript:;"><i class="add"></i>全部文件</a>
+                <a class="mage" href="javascript:;">图片</a>
+                <a class="mage" href="javascript:;">文档</a>
+                <a class="mage" href="javascript:;">视频</a>
+                <a class="mage" href="javascript:;">小说</a>
+                <a class="mage" href="javascript:;">音乐</a>
+                <a class="mage" href="javascript:;">其他</a>
+                <a class="mage" href="javascript:;"><i class="ss"></i>我的分享</a>
+                <a class="mage" href="javascript:;"><i class="dd"></i>回收站</a>
+            </div>
+            <div class="big" id="big">
+                <div class="list" id="list">
+                    <button class="down">
+                        <i class="do"></i>
+                        <dfn>下载</dfn>
+                    </button>
+                    <button class="share">
+                        <i class="s"></i>
+                        <dfn>分享</dfn>
+                    </button>
+                    <button class="move"id="move">
+                        <i class="m"></i>
+                        <dfn>移动</dfn>
+                    </button>
+                    <button class="rename" id="rename">
+                        <i class="r"></i>
+                        <dfn>重命名</dfn>
+                    </button>
+                    <button class="delete" id="delete">
+                        <i class="d"></i>
+                        <dfn>删除</dfn>
+                    </button>
+                    <button class="create" id="create">
+                        <i class="c"></i>
+                        <dfn>新建文件夹</dfn>
+                    </button>
+                    <button id="free" class="free">
+                        <dfn>随意换肤</dfn>
+                    </button>
+                </div>
+                <div class="nav" id="nav">
+                    <li>
+                        <a href="javascript:;">微云</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">JS课程</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">CSS课程</a>
+                    </li>
+                </div>
+                <div class="all">
+                    <span class="checkallname">全选</span>
+                    <span id="checkall" class="checkall "></span>
+                    <span class="other">已选中了</span>
+                    <span class="many" id="many">0</span>
+                    <span class="other">个文件</span>
+                </div>
+                <div class="wrapper" id="wrapper">
+                    <div class="filebox" id="filebox">
+                        <!-- <div class="file active">
+                            <div class="filechild">
+                                <div id="checkbox" class="checkbox"></div>
+                                <div class="file-img"></div>
+                                <div class="file-name">
+                                    <div class="text show" title="新建文件夹">新建文件夹</div>
+                                    <input type="text" class="input">
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="null" id="null">
+                        <span class="tonull">亲，当前页面为空哦</span>
+                    </div>
+                </div>
+                
+                <div class="recycleBinbox" id="recycleBinbox">
+                    <!-- <div class="recycleBin">
+                        <i class="warn"></i>
+                        <a href="javascript:;" class="cover">X</a>
+                        <span class="wen">确定要删除这个文件夹吗?</span>
+                        <span class="zi">已删除的文件夹可以在回收站找到</span>
+                        <input class="sure" type="button" value="确定">
+                        <input class="cancel" type="button" value="取消">
+                    </div> -->
+    
+    
+                    <!-- <div class="filemovebox">
+                        <div class="modal-header">
+                            <button type="button" class="close"><span>&times;</span></button>
+                            <h4 class="chose" id="chose">选择目标:</h4>
+                        </div>
+                        <div class="modal">
+                            <div class="tree" id="tree">
+                                <ul>
+                                <li>
+                                    <div class="active">
+                                    <i class="triangle"></i>
+                                    <span class="name">根目录</span>
+                                    </div>
+                                    <ul>
+                                    <li>
+                                        <div class="active">
+                                        <i class="triangle-open"></i>
+                                        <span class="name">文件夹1</span>
+                                        </div>
+                                    </li>
+                                    </ul>
+                                </li>
+                                </ul>
+                            </div>
+                            </div>
+                            <div class="footer">
+                            <button type="button" class="btn btn-cancel" data-dismiss="modal">取消</button>
+                            <button type="button" class="btn btn-sure">确定</button>
+                        </div>
+                    </div>   -->
+                </div>
+            </div>
+        </div>
+</body>
+<script src="./js/tools.js"></script>
+<script src="./js/createHtml.js"></script>
+<script src="./db/db.js"></script>
+<script src="./js/main.js"></script>
+</html>
